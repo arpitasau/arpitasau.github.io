@@ -1,17 +1,18 @@
-import React from 'react'
-import {makeStyles} from "@material-ui/core/styles"
+import React, {useState}from 'react'
+import { makeStyles } from "@material-ui/core/styles"
+import MobileRightMenuSlider from "@material-ui/core/Drawer"
 import {
-AppBar,
-Toolbar,
-ListItem,
-IconButton,
-ListItemText,
-ListItemIcon,
-Avatar,
-Divider,
-List,
-Typography,
-Box, 
+    AppBar,
+    Toolbar,
+    ListItem,
+    IconButton,
+    ListItemText,
+    ListItemIcon,
+    Avatar,
+    Divider,
+    List,
+    Typography,
+    Box,
 } from "@material-ui/core";
 import {
     ArrowBack,
@@ -19,7 +20,7 @@ import {
     Home,
     Apps,
     ContactMail
-}from "@material-ui/icons"
+} from "@material-ui/icons"
 import avatar from "../arpita.jpg"
 
 // CSS styles
@@ -34,58 +35,80 @@ const useStyles = makeStyles(theme => ({
         margin: "0.5rem auto",
         width: theme.spacing(13),
         height: theme.spacing(13),
+    },
+    listItem: {
+        color: "tan",
+
     }
+
 }));
 
 const menuItems = [
     {
-        listIcon: <Home/>,
+        listIcon: <Home />,
         listText: "Home",
     },
     {
-        listIcon: <AssignmentInd/>,
+        listIcon: <AssignmentInd />,
         listText: "Resume",
     },
     {
-        listIcon: <Apps/>,
+        listIcon: <Apps />,
         listText: "Portfolio",
     },
     {
-        listIcon: <ContactMail/>,
+        listIcon: <ContactMail />,
         listText: "Contacts",
     }
 
 ]
 
 const Navbar = () => {
+    const [state, setState] = useState({
+        right:false
+    })
+
+    const toggleSlider =((slider, open) => () =>{
+      setState({ ...state, [slider]: open });
+    });
+
+
     const classes = useStyles()
-    return (
-        <>
-        <Box className={classes.menuSliderContainer}component="div">
-            <Avatar className ={classes.avater} src={avatar} alt="My Pic"/>
-            <Divider/>
+
+    const sideList = slider => (
+        <Box className={classes.menuSliderContainer} component="div">
+            <Avatar className={classes.avater} src={avatar} alt="My Pic" />
+            <Divider />
             <List>
-                {menuItems.map((lsItem, key)=> (
+                {menuItems.map((lsItem, key) => (
                     <ListItem button key={key}>
-                    <ListItemIcon>{lsItem.listIcon}</ListItemIcon>
-                    <ListItemText/>
+                        <ListItemIcon className={classes.listItem}>{lsItem.listIcon}</ListItemIcon>
+                        <ListItemText className={classes.listItem} primary={lsItem.listText} />
                     </ListItem>
-                 ))}
+                ))}
             </List>
         </Box>
-        <Box component = "nav">
-            <AppBar position="static" style={{background: "#222"}}>
-                <Toolbar>
-                    <IconButton>
-                      <ArrowBack style={{color: "tomato"}}/>
-                    </IconButton>
-                    <Typography variant="h5" style={{ color: "tan"}}>Portfolio
+    )
+    return (
+        <>
+
+            <Box component="nav">
+                <AppBar position="static" style={{ background: "#222" }}>
+                    <Toolbar>
+                        <IconButton onClick={toggleSlider("right", true)}>
+                            <ArrowBack style={{ color: "tomato" }} />
+                        </IconButton>
+                        <Typography variant="h5" style={{ color: "tan" }}>Portfolio
                     </Typography>
-                </Toolbar>
-            </AppBar> 
-        </Box>
+                    <MobileRightMenuSlider
+                    anchor= "right"
+                    open={state.right}>
+                        {sideList("right")}
+                    </MobileRightMenuSlider>
+                    </Toolbar>
+                </AppBar>
+            </Box>
         </>
     )
 }
-
 export default Navbar
