@@ -5,9 +5,7 @@ import Navbar from "./Navbar";
 import { mergeClasses } from '@material-ui/styles';
 
 const useStyles = makeStyles(theme => ({
-    mainContainer: {
-        background: "#233"
-    },
+
     timeLine: {
         position: "relative",
         padding: "1ream",
@@ -43,12 +41,6 @@ const useStyles = makeStyles(theme => ({
         "&:after": {
             content: "''",
             position: "absolute",
-            // right: "-0.625rem",
-            // top: "calc(50% - 5px)",
-            // borderStyle: "solid",
-            // borderColor: "tomato tomato transparent transparent",
-            // borderWidth: "0.625rem",
-            // transform: "rotate(45deg)"
         },
         "&:before": {
             content: "''",
@@ -56,7 +48,7 @@ const useStyles = makeStyles(theme => ({
             right: "-0.625rem",
             top: "calc(50% - 5px)",
             borderStyle: "solid",
-            borderColor: "tomato tomato transparent transparent",
+            borderColor: "#0ABAB5 #0ABAB5 transparent transparent",
             borderWidth: "0.625rem",
             transform: "rotate(45deg)"
         },
@@ -71,7 +63,7 @@ const useStyles = makeStyles(theme => ({
             "&:nth-of-type(2n):before": {
                 right: "auto",
                 left: "-0.625rem",
-                borderColor: "transpatent transparent tomato tomato"
+                borderColor: "transparent transparent #0ABAB5 #0ABAB5"
             }
 
         }
@@ -82,7 +74,7 @@ const useStyles = makeStyles(theme => ({
         maxWidth: "9.375rem",
         margin: "0 3rem 0 auto",
         fontSize: "1.8rem",
-        background: "tomato",
+        background: "#0ABAB5",
         color: "white",
         lineHeight: 1,
         padding: "0.5rem 0 1rem",
@@ -132,39 +124,85 @@ const Resume = () => {
                             variant="h5"
                             align="center"
                             className={classes.subHeading}>
-                            web design
+                            Quality Engineer III
                       </Typography>
                         <Typography
                             variant="body1"
                             align="center"
                             style={{ color: "tomato" }}>
-                            company name
+                            Company: Grainger
                       </Typography>
                         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
-                            description description description description description description description description description description description
-                      </Typography>
+                            <p> Participating in Agile ceremonies like Daily Scrum, Story Grooming and Retro.</p>
+                            <p>Working with BA and TPM to prioritize stories in Jira.</p>
+                            <p>Identifying test scenarios, preparing test data, documenting test results and
+                             maintaining Regression test cases.</p>
+                            <p>Practicing the technique of buddy testing with the developers in their local
+                            environment to identify any issues at very early stages of development to
+                            improve the throughput of the team.</p>
+                            <p>Practicing the technique of buddy testing with the developers in their local
+                            environment to identify any issues at very early stages of development to
+                            improve the throughput of the team.</p>
+                            <p>Extensively Using SoapUI to verify REST and SOAP based web services.</p>
+                            <p>Working with cross functional team for integration and end to end testing.</p>
+
+                            <p>Automating Regression test cases using Selenium Web Driver and TestNG.</p>
+                            <p>Working with Dynatrace and Splunk as performance monitoring tool.</p>
+                        </Typography>
                     </Box>
                     <Typography
                         variant="h2"
-                        className={`${classes.timeLineYear} ${classes.timeLimeItem}`}>2019
+                        className={`${classes.timeLineYear} ${classes.timeLimeItem}`}>2018
                    </Typography>
                     <Box component="div" className={classes.timeLimeItem}>
                         <Typography
                             variant="h5"
                             align="center"
                             className={classes.subHeading}>
-                            web design
+                            QA Engineer (Consultant)
                       </Typography>
                         <Typography
                             variant="body1"
                             align="center"
                             style={{ color: "tomato" }}>
-                            company name
+                            Client: Risk Management Solutions of America
                       </Typography>
                         <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
-                            description description description description description description description description description description description
+                            <p>Writing Test Plan, Test Scenarios, Test Cases and Test Matrix documents
+                            analyzing the Use Cases and updating the Traceability Matrix to check the
+                            coverage analysis.</p>
+                            <p>Analyzing the Healthcare Claims EDI 837I and 837P files and modifying them
+                            appropriately to create different test data scenarios to validate various business
+                            rules of the application.</p>
+                            <p>Experienced in Data transformation and Data flow validation of the inbound EDI
+                            transactions from various providers into the staging server via SFTP or directly
+                            from the Application Portal.</p>
+                            <p>Have worked with edit codes to validate HIPAA compliance of the application.</p>
+                            <p>Experienced in working with Secured FTP client and SQL Database.</p>
+                        
                       </Typography>
-                      </Box>
+                    </Box>
+                    <Typography
+                        variant="h2"
+                        className={`${classes.timeLineYear} ${classes.timeLimeItem}`}>2017
+                   </Typography>
+                    <Box component="div" className={classes.timeLimeItem}>
+                        <Typography
+                            variant="h5"
+                            align="center"
+                            className={classes.subHeading}>
+                            
+                      </Typography>
+                        <Typography
+                            variant="body1"
+                            align="center"
+                            style={{ color: "tomato" }}>
+                          
+                      </Typography>
+                        <Typography variant="subtitle1" align="center" style={{ color: "tan" }}>
+                            
+                      </Typography>
+                    </Box>
                 </Box>
             </Box>
 

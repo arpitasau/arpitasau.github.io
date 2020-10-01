@@ -38,7 +38,8 @@ const useStyles = makeStyles(theme => ({
         zIndex: 1
     },
     cardContainer: {
-        margin: "5rem auto"
+        margin: "5rem auto",
+        marginLeft: "5px"
     },
 
 
