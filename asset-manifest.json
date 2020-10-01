@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/arpitasau/arpitasau.github.io/static/css/main.b6b92762.chunk.css",
-    "main.js": "/arpitasau/arpitasau.github.io/static/js/main.69c29961.chunk.js",
-    "main.js.map": "/arpitasau/arpitasau.github.io/static/js/main.69c29961.chunk.js.map",
-    "runtime-main.js": "/arpitasau/arpitasau.github.io/static/js/runtime-main.dcc531d1.js",
-    "runtime-main.js.map": "/arpitasau/arpitasau.github.io/static/js/runtime-main.dcc531d1.js.map",
-    "static/js/2.a25540cf.chunk.js": "/arpitasau/arpitasau.github.io/static/js/2.a25540cf.chunk.js",
-    "static/js/2.a25540cf.chunk.js.map": "/arpitasau/arpitasau.github.io/static/js/2.a25540cf.chunk.js.map",
-    "index.html": "/arpitasau/arpitasau.github.io/index.html",
-    "precache-manifest.699d00b7b094203cecc6b5f5e0a4f55d.js": "/arpitasau/arpitasau.github.io/precache-manifest.699d00b7b094203cecc6b5f5e0a4f55d.js",
-    "service-worker.js": "/arpitasau/arpitasau.github.io/service-worker.js",
-    "static/css/main.b6b92762.chunk.css.map": "/arpitasau/arpitasau.github.io/static/css/main.b6b92762.chunk.css.map",
-    "static/js/2.a25540cf.chunk.js.LICENSE.txt": "/arpitasau/arpitasau.github.io/static/js/2.a25540cf.chunk.js.LICENSE.txt",
-    "static/media/arpita.jpg": "/arpitasau/arpitasau.github.io/static/media/arpita.7953ceac.jpg",
-    "static/media/App.css": "/arpitasau/arpitasau.github.io/static/media/background.5bbb9021.jpg",
-    "static/media/codequiz.png": "/arpitasau/arpitasau.github.io/static/media/codequiz.8c6df95b.png",
-    "static/media/notetaker.png": "/arpitasau/arpitasau.github.io/static/media/notetaker.ec3ba97d.png",
-    "static/media/project2.png": "/arpitasau/arpitasau.github.io/static/media/project2.0e45c99c.png",
-    "static/media/rentsocial.png": "/arpitasau/arpitasau.github.io/static/media/rentsocial.9239f394.png",
-    "static/media/weather.png": "/arpitasau/arpitasau.github.io/static/media/weather.d7b68f9c.png",
-    "static/media/workschedular.png": "/arpitasau/arpitasau.github.io/static/media/workschedular.72e1a3e0.png"
+    "main.css": "/static/css/main.56033a28.chunk.css",
+    "main.js": "/static/js/main.32919d63.chunk.js",
+    "main.js.map": "/static/js/main.32919d63.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.a25540cf.chunk.js": "/static/js/2.a25540cf.chunk.js",
+    "static/js/2.a25540cf.chunk.js.map": "/static/js/2.a25540cf.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.34cadd30217fc232099074f9f085c41f.js": "/precache-manifest.34cadd30217fc232099074f9f085c41f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.56033a28.chunk.css.map": "/static/css/main.56033a28.chunk.css.map",
+    "static/js/2.a25540cf.chunk.js.LICENSE.txt": "/static/js/2.a25540cf.chunk.js.LICENSE.txt",
+    "static/media/arpita.jpg": "/static/media/arpita.7953ceac.jpg",
+    "static/media/App.css": "/static/media/background.5bbb9021.jpg",
+    "static/media/codequiz.png": "/static/media/codequiz.8c6df95b.png",
+    "static/media/notetaker.png": "/static/media/notetaker.ec3ba97d.png",
+    "static/media/project2.png": "/static/media/project2.0e45c99c.png",
+    "static/media/rentsocial.png": "/static/media/rentsocial.9239f394.png",
+    "static/media/weather.png": "/static/media/weather.d7b68f9c.png",
+    "static/media/workschedular.png": "/static/media/workschedular.72e1a3e0.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.dcc531d1.js",
+    "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.a25540cf.chunk.js",
-    "static/css/main.b6b92762.chunk.css",
-    "static/js/main.69c29961.chunk.js"
+    "static/css/main.56033a28.chunk.css",
+    "static/js/main.32919d63.chunk.js"
   ]
 }
