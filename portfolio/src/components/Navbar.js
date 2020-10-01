@@ -28,17 +28,17 @@ import avatar from "../arpita.jpg"
 const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
-        background: "#511",
+        background: "#0ABAB5",
         height: "100%"
     },
-    avater: {
+    avatar: {
         display: "block",
         margin: "0.5rem auto",
         width: theme.spacing(13),
         height: theme.spacing(13),
     },
     listItem: {
-        color: "tan",
+        color: "#00004d",
 
     }
 
@@ -99,12 +99,12 @@ const Navbar = () => {
         <>
 
             <Box component="nav">
-                <AppBar position="static" style={{ background: "#222" }}>
+                <AppBar position="static" zIndex= "1" style={{ background: "#0ABAB5" }}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                            <ArrowBack style={{ color: "tomato" }} />
+                            <ArrowBack style={{ color: "#00004d" }} />
                         </IconButton>
-                        <Typography variant="h5" style={{ color: "tan" }}>Portfolio
+                        <Typography variant="h5" style={{ color: "orange" }}>Portfolio
                     </Typography>
                     <MobileRightMenuSlider
                     anchor= "right"
