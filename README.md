@@ -5,7 +5,7 @@
 
    * Navbar contains an clickable arrow, that opens slider navigation menu.
 
-   * Navbar consistent on each page.
+   * Navbar is consistent on each page.
 
    * Portfolio page displays sample projects done by me.
 
@@ -17,7 +17,7 @@
 
 * Material-UI
 
-* Partcle.js animation
+* Particle.js animation
 
 * React-typed
 
