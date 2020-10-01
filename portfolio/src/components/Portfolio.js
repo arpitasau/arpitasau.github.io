@@ -83,6 +83,7 @@ const Portfolio = () => {
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
                                     Travel and Style(Group Project)
+                            </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
                                     Full stack application that suggests outfit based on weather
 
