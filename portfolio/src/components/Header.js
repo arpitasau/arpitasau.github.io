@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import {
     Typography,
-    Avatar,
     Grid,
     Box,
     Card,
@@ -35,11 +34,11 @@ const useStyles = makeStyles(theme => ({
         transform: "translate(-50%, -50%)",
         width: "100vw",
         textAlign: "center",
-        zIndex: 1
+        
     },
     cardContainer: {
         margin: "5rem auto",
-        marginLeft: "5px"
+        marginLeft: "5px",
     },
 
 
@@ -84,11 +83,6 @@ const Header = () => {
                                     <p>Now I have taken up a new challenge, yeah… to become a full-stack software developer and would love to see myself as software developer in coming years!!!</p>
                                     <p>If I am not working, my entire time goes in taking care of my family, trying out new recipes, making art and crafts with my daughter and reading…..</p>
                                     <p>This is me in nutshell ……….  </p>
-                                    <p>Hit me in any of the below mode of communications if you want to be part of my professional network.</p>
-
-
-
-
                                 </Typography>
                             </CardContent>
                         </CardActionArea>
